@@ -116,3 +116,6 @@ const CONFIG_SEGMENT_IO_KEY = '';
 const CONFIG_AWS_S3_KEY_ID = '';
 const CONFIG_AWS_S3_SECRET = '';
 const CONFIG_AWS_S3_BUCKET = '';
+
+const CONFIG_WEBHOOK_ENABLED = true;
+const CONFIG_WEBHOOK_URL = 'http://localhost/webhook';

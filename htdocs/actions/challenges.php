@@ -129,6 +129,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             )
         );
 
+        if (CONFIG_WEBHOOK_ENABLED) {
+            fire_webhook($time,$_POST['challenge'],$_SESSION['id'],$correct);
+        }
+
         if (!$challenge['automark']) {
             redirect('challenges?status=manual');
         }
